@@ -4,6 +4,9 @@
   padding: 0;
 }
 header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   background-color: #1c1e1f;
   height: 3em;
@@ -25,6 +28,7 @@ nav ul {
   display: flex;
   justify-content: center;
   padding-top: 0.6em;
+
   list-style: none;
 }
 nav li {
@@ -34,6 +38,7 @@ header ul li a:hover {
   color: rgb(255, 60, 60);
   transition: all 0.3s ease 0s;
 }
+
 #title {
   margin-right: auto;
 }
