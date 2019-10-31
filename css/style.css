@@ -75,6 +75,7 @@ main ul li {
   transition: all 0.3s ease 0s;
 }
 .background {
+  margin-top: 1px;
   position: relative;
   display: flex;
   justify-content: space-evenly;
