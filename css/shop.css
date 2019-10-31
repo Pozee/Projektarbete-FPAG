@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+}
+
+html {
+    background: url(../bilder/aromatic-beans-blur-773958.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.main-text {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+main strong {
+    text-decoration: underline;
+}
+
+main {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+}
+
+main h1 {
+    padding-left: 3em;
+}
+
+main ul {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    text-shadow: 2px 2px 0px #000000;
+    font-size: 0.6em;
+    padding-left: 2em;
+    padding-top: 2em;
+    font-size: 1.2em;
+    margin-left: 4em;
+}
+
+main ul li {
+    list-style-image: url(/bilder/coffee-bean-2-24.ico);
+    padding-top: 5px;
+}
+
+.background {
+    position: relative;
+    margin-top: 10em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    position: static;
+    background-color: rgb(223, 223, 223);
+    width: 100vw;
+    min-height: 250px;
+    -webkit-box-shadow: 0px -1px 2px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px -1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    max-width: 20em;
+    border-style: solid;
+    border-width: 1.2px;
+    padding: 0.2em;
+    margin: 0.5em;
+    border-color: rgb(255, 60, 60);
+}
+
+h3 {
+    color: white;
+    font-family: "lato", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.blendcontainer {
+    margin-bottom: 3em;
+}
+
+.coffeecontainer {
+    background-color: rgba(105, 105, 105, 0.4);
+    padding: 3em 2em;
+}
