@@ -1,0 +1,116 @@
+@import "typography.css";
+@import "footer.css";
+@import "header.css";
+
+body {
+    background: #1c1e1f;
+}
+
+.hero {
+    /* Background and stuff */
+    background: url(../bilder/michal-parzuchowski-ItaV89TNkks-unsplash.jpg) center;
+    background-size: cover;
+    padding: 6rem 4rem;
+    margin-top: 0.1rem;
+    -webkit-box-shadow: 0px 1px 0px 0px rgb(255, 60, 60);
+    box-shadow: 0px 1px 0px 0px rgb(255, 60, 60);
+    /* Grid styles */
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 1rem;
+}
+
+.main {
+    /* Background and stuff */
+    width: 100%;
+    padding: 6rem 0;
+    /* Grid styles */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+    grid-gap: 1rem;
+}
+
+.text--medium {
+    font-size: 1.4rem;
+    line-height: 1rem;
+    font-weight: 200;
+    color: azure;
+}
+
+.text--uppercase {
+    text-transform: uppercase;
+}
+
+.shop {
+    padding: 4rem 2rem;
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-gap: 2rem;
+    position: relative;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+}
+
+.shop__title {
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 4rem 2rem;
+    font-weight: 800;
+}
+
+.product:hover {
+    transform: translateY(-7px);
+}
+
+.product {
+    grid-column-end: span 1;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.product__image-container {
+    width: 100%;
+    height: 360px;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.product__image-container img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product__content {
+    padding: 10px;
+}
+
+.product__title {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.product__info {
+    display: flex;
+    align-self: end;
+    align-items: center;
+}
+
+.product__price {
+    margin-left: auto;
+    padding: 10px 25px;
+    background-color: darkgoldenrod;
+    border-radius: 5px;
+}
+
+/* div {
+    float: left;
+    clear: none;
+} */

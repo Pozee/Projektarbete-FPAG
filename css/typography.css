@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald:500&display=swap');
+
+html {
+    font-size: 62.5%;
+    font-family: "lato", sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 4.2rem;
+    line-height: 6.6rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3.3rem;
+    line-height: 5.3rem;
+}
+
+h3 {
+    font-size: 2.6rem;
+    line-height: 4.3rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 2.9rem;
+}
+
+a {
+    font-size: 2rem;
+    line-height: 3rem;
+}
