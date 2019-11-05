@@ -7,31 +7,33 @@ body {
 }
 
 .hero {
-    /* Background jizz */
-    background: url(../bilder/beans-brown-coffee-9186.jpg) center;
+    /* Background and stuff */
+    background: url(../bilder/michal-parzuchowski-ItaV89TNkks-unsplash.jpg) center;
     background-size: cover;
     padding: 6rem 4rem;
     margin-top: 0.1rem;
+    -webkit-box-shadow: 0px 1px 0px 0px rgb(255, 60, 60);
+    box-shadow: 0px 1px 0px 0px rgb(255, 60, 60);
     /* Grid styles */
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 2rem;
+    grid-gap: 1rem;
 }
 
 .main {
-    /* Background jizz */
+    /* Background and stuff */
     width: 100%;
+    padding: 6rem 0;
     /* Grid styles */
     display: grid;
-    grid-template-columns: 1fr repeat(auto-fill, minmax(auto, 60px)) 1fr;
-    grid-gap: 2rem;
-    padding: 60px 0;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+    grid-gap: 1rem;
 }
 
 .text--medium {
-    font-size: 14px;
-    line-height: 10px;
+    font-size: 1.4rem;
+    line-height: 1rem;
     font-weight: 200;
     color: azure;
 }
@@ -44,8 +46,11 @@ body {
     padding: 4rem 2rem;
     grid-column: 2 / span 12;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(auto, 60px));
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-gap: 2rem;
+    position: relative;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
 }
 
 .shop__title {
@@ -60,7 +65,7 @@ body {
 }
 
 .product {
-    grid-column-end: span 4;
+    grid-column-end: span 1;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -104,3 +109,8 @@ body {
     background-color: darkgoldenrod;
     border-radius: 5px;
 }
+
+/* div {
+    float: left;
+    clear: none;
+} */
