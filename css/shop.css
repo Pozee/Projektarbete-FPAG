@@ -8,7 +8,7 @@ body {
 
 .hero {
     /* Background and stuff */
-    background: url(../bilder/michal-parzuchowski-ItaV89TNkks-unsplash.jpg) center;
+    background: url(../bilder/michal-parzuchowski-ItaV89TNkks-unsplash-red.png) center;
     background-size: cover;
     padding: 6rem 4rem;
     margin-top: 0.1rem;
@@ -22,24 +22,10 @@ body {
 }
 
 .main {
-    /* Background and stuff */
-    width: 100%;
-    padding: 6rem 0;
     /* Grid styles */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
     grid-gap: 1rem;
-}
-
-.text--medium {
-    font-size: 1.4rem;
-    line-height: 1rem;
-    font-weight: 200;
-    color: azure;
-}
-
-.text--uppercase {
-    text-transform: uppercase;
 }
 
 .shop {
@@ -56,7 +42,7 @@ body {
 .shop__title {
     text-align: center;
     font-size: 2.8rem;
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 1rem 2rem;
     font-weight: 800;
 }
 
@@ -110,7 +96,3 @@ body {
     border-radius: 5px;
 }
 
-/* div {
-    float: left;
-    clear: none;
-} */
