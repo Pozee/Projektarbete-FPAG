@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  color: white;
+  text-align: left;
+  display: inline-block;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 60, 60, 0.664);
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  background-color: #1c1e1f;
+}
+.nav a {
+  transition: all 0.3s ease 0s;
+}
+.nav a:hover {
+  color: rgb(255, 60, 60);
+  transition: all 0.3s ease 0s;
+}
+.meny {
+  margin: 0 30px 0 0;
+}
+.meny a {
+  clear: right;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  line-height: 70px;
+}
+label {
+  color: white;
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+#toggle {
+  display: none;
+}
+@media only screen and (max-width: 580px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .meny {
+    margin-top: 4.38em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    display: none;
+    background-color: #1c1e1f;
+  }
+  .meny a {
+    display: block;
+    border-bottom: 1px solid rgba(255, 60, 60, 0.664);
+    margin: 0;
+  }
+  #toggle:checked + .meny {
+    display: block;
+  }
+}
+/* header {
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #1c1e1f;
+  height: 3em;
+  font-family: "lato", sans-serif;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 1px 0px 0px rgb(255, 60, 60);
+  box-shadow: 0px 1px 0px 0px rgb(255, 60, 60);
+} */
+
+/* nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.6em;
+
+  list-style: none;
+}
+nav li {
+  display: inline;
+}
+header ul li a:hover {
+  color: rgb(255, 60, 60);
+  transition: all 0.3s ease 0s;
+}
+
+#title {
+  margin-right: auto;
+}
+#title a:hover {
+  color: white;
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.2em;
+    background-color: #1c1e1f;
+  }
+  #title {
+    flex-basis: 100%;
+    text-align: center;
+    margin-left: 0;
+    padding-bottom: 0.5em;
+    font-size: 1.5em;
+  }
+  nav ul li {
+    flex-basis: 100%;
+  }
+  .main-text {
+    margin-top: 4em;
+  }
+  nav ul {
+    border-bottom: 1px solid rgb(255, 60, 60);
+  }
+nav ul li a {
+    padding: 0.3em;
+  }
+} */

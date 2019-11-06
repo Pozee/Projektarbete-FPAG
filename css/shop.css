@@ -110,6 +110,12 @@ body {
     border-radius: 5px;
 }
 
+
+.coffeecontainer {
+    background-color: rgba(105, 105, 105, 0.4);
+    padding: 3em 2em;
+}
+
 /* div {
     float: left;
     clear: none;
