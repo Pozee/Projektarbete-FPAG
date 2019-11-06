@@ -1,93 +1,122 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    ;
+@import "typography.css";
+@import "footer.css";
+@import "header.css";
+
+body {
+    background: #1c1e1f;
 }
 
-html {
-    background: url(../bilder/aromatic-beans-blur-773958.jpg) no-repeat center center fixed;
+.hero {
+    /* Background and stuff */
+    background: url(../bilder/michal-parzuchowski-ItaV89TNkks-unsplash.jpg) center;
     background-size: cover;
-}
-
-.main-text {
-    color: white;
-    font-family: "Oswald", sans-serif;
-    font-weight: 500;
-    text-shadow: 2px 2px 0px #000000;
-}
-
-main strong {
-    text-decoration: underline;
-}
-
-main {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 5px;
-    display: flex;
+    padding: 6rem 4rem;
+    margin-top: 0.1rem;
+    -webkit-box-shadow: 0px 1px 0px 0px rgb(255, 60, 60);
+    box-shadow: 0px 1px 0px 0px rgb(255, 60, 60);
+    /* Grid styles */
+    display: grid;
     align-items: center;
-    margin-top: 10%;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 1rem;
 }
 
-main h1 {
-    padding-left: 3em;
+.main {
+    /* Background and stuff */
+    width: 100%;
+    padding: 6rem 0;
+    /* Grid styles */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+    grid-gap: 1rem;
 }
 
-main ul {
-    color: white;
-    font-family: "Oswald", sans-serif;
-    text-shadow: 2px 2px 0px #000000;
-    font-size: 0.6em;
-    padding-left: 2em;
-    padding-top: 2em;
-    font-size: 1.2em;
-    margin-left: 4em;
+.text--medium {
+    font-size: 1.4rem;
+    line-height: 1rem;
+    font-weight: 200;
+    color: azure;
 }
 
-main ul li {
-    list-style-image: url(/bilder/coffee-bean-2-24.ico);
-    padding-top: 5px;
-}
-
-.background {
-    position: relative;
-    margin-top: 10em;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    position: static;
-    background-color: rgb(223, 223, 223);
-    width: 100vw;
-    min-height: 250px;
-    -webkit-box-shadow: 0px -1px 2px 1px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px -1px 2px 1px rgba(0, 0, 0, 0.5);
-}
-
-img {
-    max-width: 20em;
-    border-style: solid;
-    border-width: 1.2px;
-    padding: 0.2em;
-    margin: 0.5em;
-    border-color: rgb(255, 60, 60);
-}
-
-h3 {
-    color: white;
-    font-family: "lato", sans-serif;
+.text--uppercase {
     text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 0.5em;
 }
 
-.blendcontainer {
-    margin-bottom: 3em;
+.shop {
+    padding: 4rem 2rem;
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-gap: 2rem;
+    position: relative;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
 }
+
+.shop__title {
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 4rem 2rem;
+    font-weight: 800;
+}
+
+.product:hover {
+    transform: translateY(-7px);
+}
+
+.product {
+    grid-column-end: span 1;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.product__image-container {
+    width: 100%;
+    height: 360px;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.product__image-container img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product__content {
+    padding: 10px;
+}
+
+.product__title {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.product__info {
+    display: flex;
+    align-self: end;
+    align-items: center;
+}
+
+.product__price {
+    margin-left: auto;
+    padding: 10px 25px;
+    background-color: darkgoldenrod;
+    border-radius: 5px;
+}
+
 
 .coffeecontainer {
     background-color: rgba(105, 105, 105, 0.4);
     padding: 3em 2em;
 }
+
+/* div {
+    float: left;
+    clear: none;
+} */
