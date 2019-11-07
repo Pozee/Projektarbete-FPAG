@@ -1,45 +1,95 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
+      <link rel="icon" href="coficon.ico" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <meta charset="UTF-8" />
-    <meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <link
       href="https://fonts.googleapis.com/css?family=Lato|Oswald:500&display=swap"
       rel="stylesheet"
+      type="text/css"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Landing page</title>
+    <title>Contact - Kaffeboden</title>
   </head>
   <body>
-    <header class="container">
+    <header>
       <nav>
-        <ul>
-          <li class="container-item"><a href="#">Contact us</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="nav">
+      <h1 id="title">Kaffeboden</h1>
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle" />
+      <div class="meny">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="#">About us</a>
+        <a href="kontakt.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  </header>
+      
+      
     <main>
       <div>
         <br>
         <br>
-        <br>
-        <br>
-      <h1 class="main-text">
-        Here you find all the information for communicating with us.
-      </h1>
-      <ul >
-        <li><img src="bilder/ikon_mail.png" style="float:left; padding-bottom:0px; padding-right:15px">E - post: <span id="mails">info@kaffeboden.se</span></li><br>
-        <li><img src="bilder/ikon_telefon.png" style="float:left; padding-bottom:0px; padding-right:15px">Telefon: 076 XXX XX XX</li><br>
-        <li><img src="bilder/ikon_adress.png" style="float:left; padding-bottom:0px; padding-right:15px">
-            Fakturadress: Kaffeboden AB, Kaffevägen 2, 113 46 Stockholm<br>
-            Besökadress: Kaffeboden AB, Kaffe Torg 10, 744 51 Stochholm</li><br>
-      </ul>
-      <br>
-        <br>
+      
+          <div class="firsto">
+            <article class="first-article"> 
+                <h1 class="main-text" style="margin-bottom: 25px">
+                    Contact our support team and find all the information.     
+                </h1>
+                <p>Opening hours: 24 hours a day, every day of the year.</p>
+            </article>
+          </div>
+
+          
+      <div class="sub_body" style="background-color: #0008; display: table; padding: 15px">  
+          <ul style="display: table-cell">
+            <li><img src="bilder/ikon_mail.png" style="float:left; padding-bottom:0px; padding-right:15px">E - post: <span id="mails">info@kaffeboden.se</span></li><br>
+            <li><img src="bilder/ikon_telefon.png" style="float:left; padding-bottom:0px; padding-right:15px">Telefon: 076 XXX XX XX</li><br>
+            <li><img src="bilder/ikon_adress.png" style="float:left; padding-bottom:0px; padding-right:15px">
+                Fakturadress: Kaffeboden AB, Kaffevägen 2, 113 46 Göteborg<br>
+                Besökadress: Kaffeboden AB, Kaffe Torg 10, 744 51 Göteborg</li>
+          </ul>
+      </div>
+
+          <div style="width: 100%; background-color: #0008; margin-top: 50px; margin-bottom: -50px;">
+              <h1 style="color: lightblue; font-size: 2.5em; padding: 70px; font-weight: bold; margin:0 auto;display: inline-block">Send us instant message </h1>
+
+          </div>
+          
+          
+          <form class="_msg" name="myForm"> 
+            <fieldset>
+                <legend class="main-text"><h1>Personla information</h1></legend>
+                <h2 class="main-text" style="padding-left: 10px; padding-bottom: 40px">Fill in the fields below with your personal information. Then click 'Send' or contact us by mail.</h2>
+
+                <h3>First Name:</h3>
+                <input class="mata" type="text" maxlength="15"><br>
+                <h3>Last Name:</h3>
+                <input class="mata" type="text" maxlength="15"><br>
+
+                <h3>Mobile Number:</h3>
+                <input class="mata" type="text" maxlength="15" ><br>
+                <h3>Your E-mail:</h3>
+                <input class="mata" type="text" maxlength="25"><br>
+
+                <h3>Your Message:</h3>
+                <textarea class="txt_1" rows="10" cols="80" scrolling="auto"></textarea><br>
+
+                <textarea class="txt_2" rows="10" cols="40" scrolling="auto"></textarea><br>
+
+
+                <input class="btn" type="reset" value="Send">   <br>
+            </fieldset>
+
+
+        </form>
         <br>
         <br>
     </div>
@@ -47,7 +97,7 @@
     </main>
 
     <div class="background">
-      <div class="customer-reviews">
+        <div class="customer-reviews">
         <h4>Maria</h4>
         <p>2 weeks ago</p>
         <ion-icon name="star"></ion-icon>
@@ -86,7 +136,25 @@
         </p>
       </div>
     </div>
-<footer></footer>
+    <footer id="index-footer"> <!-- ID är endast för index sidan-->
+      <h4>Kaffeboden 2019-2020</h4>
+      <div class="socials">
+        <img src="/bilder/facebook-3-32.png" alt="FB-Social" />
+        <img
+          src="/bilder/twitter-32.png"
+          alt="Twitter-Social"
+        />
+        <img
+          src="/bilder/instagram-32.png"
+          alt="Insta-Social"
+        />
+      </div>
+      <ul>
+        <li>About Us</li>
+        <li>Contact</li>
+        <li>Vision</li>
+      </ul>
+    </footer>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
