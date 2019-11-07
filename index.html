@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
+      <link rel="shortcut icon" type="image/x-icon" href="coficon.ico" />
     <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
@@ -12,23 +13,27 @@
       type="text/css"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Home - Kaffeboden</title>
+    <title>Kaffeboden - Home</title>
   </head>
   <body>
     <header>
       <nav>
-        <ul>
-          <li id="title"><a href="index.html">Kaffeboden</a></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="kontakt.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="nav">
+      <h1 id="title">Kaffeboden</h1>
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle" />
+      <div class="meny">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About us</a>
+        <a href="kontakt.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  </header>
     <main>
       <h1 class="main-text">
-          <br>
+        <br />
         With over <strong>10 years of experience</strong>, we have handpicked
         our products <br />
         so that we can guarantee you the coffee you deserve.
@@ -83,7 +88,25 @@
         </p>
       </div>
     </div>
-    <footer></footer>
+    <footer id="index-footer"> <!-- ID är endast för index sidan-->
+      <h4>Kaffeboden 2019-2020</h4>
+      <div class="socials">
+        <img src="bilder/facebook-3-32.png" alt="FB-Social" />
+        <img
+          src="bilder/twitter-32.png"
+          alt="Twitter-Social"
+        />
+        <img
+          src="bilder/instagram-32.png"
+          alt="Insta-Social"
+        />
+      </div>
+      <ul>
+        <li>About Us</li>
+        <li>Contact</li>
+        <li>Vision</li>
+      </ul>
+    </footer>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
