@@ -38,6 +38,11 @@ body{
     width: 100%
 }
 
+.firsto:hover{
+    font-size: 1.5em;
+    color: red;
+    
+}
 
 .btn:hover {
     transform: translateY(-5px);
@@ -50,7 +55,11 @@ body{
     background-color: #0009;
     margin-bottom: 50px;
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 50px;
+}
+
+.sub_body{
+    width: 60%;
 }
 
 
@@ -70,6 +79,7 @@ body{
 ._msg textarea{
     margin-left: 10px;
     margin-bottom: 30px;
+    
 }
 
 
@@ -142,6 +152,13 @@ main ul li {
 
 
 
+
+
+.txt_2{
+    display: none;
+}
+
+
 .background {
   margin-top: 1px;
   position: relative;
@@ -201,13 +218,36 @@ main ul li {
         margin-right: 5px
     }
     
-    ._msg{
-        
+    .txt_1{ display: none        
     }
+
     .firsto{
         width: 100%;
         margin-left: 0px;
         margin-bottom: 0px;
+    }
+    
+    ._msg{
+        margin-top: 0px;
+    }
+    .sub_body{
+        width: 100%;
+        margin-bottom: 0px
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    
+    
+    .txt_2{
+    display: block;
+    }
+    
+    .txt_1{
+        display: none;
+    }
+     .sub_body{
+        width: 100%;
     }
     
 }
