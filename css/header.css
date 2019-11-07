@@ -10,6 +10,9 @@
   display: inline-block;
 }
 .nav {
+  z-index: 999;
+  position: fixed;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   font-family: "Lato", sans-serif;
