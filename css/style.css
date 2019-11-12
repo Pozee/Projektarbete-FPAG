@@ -15,6 +15,7 @@ html {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   text-shadow: 2px 2px 0px #000000;
+  animation: fadein 2s;
 }
 
 main strong {
@@ -57,7 +58,6 @@ main ul li {
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  -webkit-box-shadow: 0px 1px 2px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 1px 2px 3px rgba(0, 0, 0, 0.5);
 }
 .shop-btn p {
@@ -83,7 +83,6 @@ main ul li {
   background-color: rgb(223, 223, 223);
   width: 100%;
   min-height: 250px;
-  -webkit-box-shadow: 0px -1px 2px 1px rgba(0, 0, 0, 0.5);
   box-shadow: 0px -1px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -111,4 +110,9 @@ main ul li {
 } 
 #index-footer { /*Använd ej, är bara till för index */
   position: static;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
