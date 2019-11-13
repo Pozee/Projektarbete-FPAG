@@ -8,7 +8,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <link
-      href="https://fonts.googleapis.com/css?family=Supermercado+One|Lato|ZCOOL+QingKe+HuangYou|Permanent+Marker|Oswald:500&display=swap"
+      href="https://fonts.googleapis.com/css?family=Supermercado+One|Lato|ZCOOL+QingKe+HuangYou|Permanent+Marker|Oswald:500|Righteous&display=swap"
       rel="stylesheet"
       type="text/css"
     />
@@ -43,7 +43,7 @@
                 <h1 class="main-text" style="margin-bottom: 25px">
                     Contact our support team and find all the information.     
                 </h1>
-                <p>Opening hours: 24 hours a day, every day of the year.</p>
+                <p style="font-family: 'ZCOOL QingKe HuangYou', cursive;">Opening hours: 24 hours a day, every day of the year.</p>
             </article>
           </div>
       
@@ -52,28 +52,34 @@
       <div class="cont_a">
         <div class="contacto">
             <div class="cont_flex">
-                <div><img src="bilder/ikon_mail.png" style="float:left; padding-bottom:0px; padding-right:15px;"><br><br><br>E - post: <span id="mails">info@kaffeboden.se</span></div>
-                <div><img src="bilder/ikon_telefon.png" style="float:left; padding-bottom:0px; padding-right:15px"><br><br><br>Telefon: 076 XXX XX XX</div>
-                <div><img src="bilder/ikon_adress.png" style="float:left; padding-bottom:0px; padding-right:15px"><br><br><br>
+                <div><img src="bilder/ikon_mail.png" class="cont_icon">E - post: <span id="mails">info@kaffeboden.se</span></div>
+                <div><img src="bilder/ikon_telefon.png" class="cont_icon">Telefon: 076 XXX XX XX</div>
+                <div><img src="bilder/ikon_adress.png" class="cont_icon">
                 Fakturadress: Kaffeboden AB, Kaffevägen 2, 113 46 Göteborg<br>
                 Besökadress: Kaffeboden AB, Kaffe Torg 10, 744 51 Göteborg</div>
             </div>
         </div>
+          
+        <div id="map">
+
+
+        </div>
       </div>
       
-    <main>
-      <div>          
-      <div class="sub_body" style="background-color: #0008; display: table; padding: 15px">  
-       
-      </div>
 
-          <div style="width: 100%; background-color: #0008; margin-top: 50px; margin-bottom: -50px;">
-              <h1 style="color: lightblue; font-size: 2.5em; padding: 70px; font-weight: bold; margin:0 auto;display: inline-block">Send us instant message </h1>
+          
+      
+    <main>
+      <div>    
+          <div class="sendHead">
+              <a href="#_msg" style="text-decoration: none">
+                <h1 class="sendo">Send us instant message</h1>
+              </a>
 
           </div>
           
           
-          <form class="_msg" name="myForm"> 
+          <form class="_msg" id="_msg" name="myForm"> 
             <fieldset>
                 <legend class="main-text"><h1>Personla information</h1></legend>
                 <h2 class="main-text" style="padding-left: 10px; padding-bottom: 40px">Fill in the fields below with your personal information. Then click 'Send' or contact us by mail.</h2>
@@ -165,6 +171,18 @@
         <li>Vision</li>
       </ul>
     </footer>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+        function initMap () {
+            var location = {lat: 57.699070, lng: 11.958530};
+            var map = new google.maps.Map(document.getElementById("map"), {zoom: 4, center: location});
+            
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }  
+    </script>
+      
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLCKrNLR7mLiXaLeHXE0FKr6iEquGg5GA&callback=initMap"></script>
   </body>
 </html>

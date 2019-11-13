@@ -52,7 +52,7 @@ body{
     background-color: #0008; 
     border-bottom: 1px solid red;
     padding: 15px; 
-    margin-bottom: 20px; 
+    margin-bottom: 60px; 
     width: 100%
 }
 
@@ -72,18 +72,34 @@ body{
 }
 
 .cont_flex{
-    display: flex;
+    display: inline-flex;
     flex-flow: row wrap;
-    justify-content: space-between;
     color: white;
     font-size: 1.2em;
+    justify-content: space-between;
     font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 
 .cont_flex div{
-    padding: 30px
+    padding: 30px;
+    margin-top: 55px;
 }
 
+.cont_flex > div:hover{
+    font-size: 1.3em;
+    border: 1px solid red;
+    border-radius: 20px
+}
+
+#map {
+
+    width: 400px;
+    height: 300px;
+    grid-column: 2;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
 
 
 .sub_body{
@@ -96,10 +112,36 @@ body{
     width: 100%
 }
 
+
+
 .firsto:hover{
     font-size: 1.5em;
     color: red;
     
+}
+
+
+.cont_icon{
+    display: block; 
+    padding-bottom:30px; 
+    padding-right:15px;
+}
+
+.sendHead{
+    width: 100%; 
+    background-color: #0008; 
+    margin-top: 80px; 
+    margin-bottom: -50px;
+}
+
+
+.sendo{
+    color: lightblue; 
+    font-size: 2.5em; 
+    padding: 70px; 
+    font-weight: bold; 
+    margin:0 auto;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 
 .btn:hover {
@@ -143,20 +185,20 @@ body{
 
 
 .btn{
-    font-size: 1.7em;
+    font-size: 1.5em;
     margin-left: 10px;
     margin-right: 50px;
     margin-bottom: 50px;
     margin-top: 15px;
-    padding: 10px 100px;
+    padding: 7px 100px;
     padding-right: 100px;
     width: 5em;
-    background-color: #835034;
-    border: 2px solid #B58044;
+    background-color: #4B2821;
+    border: 1px solid darkred;
     border-radius: 1px;
     width: 660px;
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: 'Righteous', cursive;
+    
     color: white;
     overflow: hidden;
 }
@@ -376,6 +418,27 @@ main ul li {
     }
     
     .btn{
-        width: 350px;
+        width: 345px;
     }
+    
+    .cont_a{
+    grid-template-rows: 75% 25%;
+    }
+    
+    .contacto{
+        grid-row: 1;}
+    
+    #map {
+        display: block;
+        width: 350px;
+        height: 300px;
+        grid-column: 1;
+        grid-row: 2;
+    
+    }
+    .cont_flex div{
+    padding: 10px;
+    margin-top: 20px;
+}
+
 }
