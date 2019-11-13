@@ -31,6 +31,7 @@ body{
      
     padding: 15px; 
     margin-bottom: 20px; 
+    margin-top: 30px;
     width: 100%
 }
 
@@ -45,10 +46,14 @@ body{
 }
 
 .btn:hover {
-    transform: translateY(-5px);
+    transform: translateY(-1px);
     cursor: pointer;
 }
 
+#a_btn{
+    display: block;
+    
+}
 
 ._msg{
     width: 100%; 
@@ -84,16 +89,57 @@ body{
 
 
 .btn{
-    font-size: 2em;
+    font-size: 1.7em;
     margin-left: 10px;
     margin-right: 50px;
     margin-bottom: 50px;
-    margin-top: 20px;
-    padding: 15px;
+    margin-top: 15px;
+    padding: 10px 100px;
+    padding-right: 100px;
     width: 5em;
     background-color: #0bb;
     border: 3px solid black;
-    border-radius: 5px;
+    border-radius: 1px;
+    width: 660px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    overflow: hidden;
+}
+
+.btns{
+    position: relative;
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 30px 0;
+    padding:20px 50px 20px 50px;
+    border: 2px solid darkblue;
+    overflow: hidden;
+    width:500px;
+    
+}
+
+.btns::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: darkblue;
+    height: 0;
+    width: 0;
+    z-index: -1;
+    transition: 0.7s all ease;
+}
+
+
+
+.btns:hover::before{
+    height: 100%;
+    width: 0;
 }
 
 
@@ -128,6 +174,7 @@ main ul {
   font-size: 1.2em;
   margin: 0 auto;
 }
+
 main ul li {
   list-style-image: none;
   padding-top: 5px;
@@ -184,6 +231,14 @@ main ul li {
   color: lightblue;
   text-decoration: underline;
 }
+
+
+/* Mobile ---   Puntos    ---------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------- */
+
+
 @media (max-width: 580px) {
   .main-text {
     font-size: 1.5em;
@@ -203,6 +258,8 @@ main ul li {
   }
   
 } 
+
+
 #index-footer { /*Använd ej, är bara till för index */
   position: relative;
 }
@@ -210,6 +267,10 @@ main ul li {
 
 
 
+/* Mobile --------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 400px) {
     
@@ -235,6 +296,12 @@ main ul li {
         margin-bottom: 0px
     }
 }
+
+
+/* Tab --------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 800px) {
     
