@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap');
+@import "header.css";
+@import "footer.css";
+
+footer {
+    position: relative;
+}
+
+html {
+    font-family: "lato", sans-serif;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #1c1e1f;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+h2, p {
+    text-align: center;
+}
+
+
+.hero {
+    /* Background and stuff */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../bilder/coffee-beans-1695052.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    padding: 6rem 4rem;
+    margin-top: 0.1rem;
+    -webkit-box-shadow: 0px 1px 0px 0px rgb(255, 60, 60);
+    box-shadow: 0px 1px 0px 0px rgb(255, 60, 60);   
+    font-size: 4.2rem;
+    line-height: 6.6rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero-text {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+.visionboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+
+    margin: 3rem 0rem;
+    width: 70vw;
+
+}
+
+.visionboard__container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    /* background: green; */
+}
+
+.visionboard--wide-span {
+    grid-column: span 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.visionboard--img-size {
+    max-width: 300px;
+}
+
+/* Text-altering stuff */
+
+.text--medium {
+    font-size: 1.2rem;
+    line-height: 1rem;
+    font-weight: 200;
+    color: azure;
+}
+
+.text--uppercase {
+    text-transform: uppercase;
+}
+
+.hero__since {
+    font-size: 3rem;
+    font-family: 'Homemade Apple', cursive;
+    position: relative;
+    left: 30rem;
+}
+
+/* Image animations */
+.slide-in-left {
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-in-right {
+	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+
+@-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }  
+
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+/* Media Queries */
+
+@media screen and (max-width: 860px) {
+    .visionboard__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr;
+    }
+
+    .visionboard--wide-span {
+        grid-column: unset;
+    }
+}
