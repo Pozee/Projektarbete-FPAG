@@ -53,3 +53,46 @@ main{
 	padding: 0 5px;
 	text-align: center;
 }
+
+.member-photo:hover{
+	box-shadow: 0 0 5px #212121;
+	transform: scale(1.1, 1.1);
+	transition: transform .3s;
+}
+
+
+
+@media (max-width: 640px){
+	.member{
+		width: 100%;
+		margin: auto auto;
+	}
+}
+
+@media (min-width: 640px) and (max-width: 7680px){
+	.member{
+		width: 45%;
+		margin: auto 10px;
+	}
+}
+ 
+@media (min-width: 768px) and (max-width: 1024px){
+	.member{
+		width: 30%;
+		margin: auto 10px;
+	}
+}
+ 
+@media (min-width: 1024px){
+	.member{
+		width: 23%;
+		margin: auto 10px;
+	}
+}
+
+
+
+
+
+
+
