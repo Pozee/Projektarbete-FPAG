@@ -4,10 +4,7 @@
   box-sizing: border-box;
 }
 html {
-  background: url(../bilder/aromatic-beans-blur-773958.jpg) no-repeat center
-    center fixed;
-  background-size: cover;
-  height: 100%;
+  background-color: #1c1e1f;
 }
 
 #title{
@@ -17,6 +14,21 @@ html {
 body{
     height: 100%;
 }
+
+
+
+.h_img{
+    
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: url(../bilder/kof.jpg) no-repeat fixed;
+    background-size: cover;
+    display: block;
+    margin-top: 70px;
+}
+
+
 
 .main-text {
   color: white;
@@ -28,10 +40,9 @@ body{
 
 .firsto{
     background-color: #0008; 
-     
+    border-bottom: 1px solid red;
     padding: 15px; 
     margin-bottom: 20px; 
-    margin-top: 30px;
     width: 100%
 }
 
@@ -97,8 +108,8 @@ body{
     padding: 10px 100px;
     padding-right: 100px;
     width: 5em;
-    background-color: #0bb;
-    border: 3px solid black;
+    background-color: #835034;
+    border: 2px solid #B58044;
     border-radius: 1px;
     width: 660px;
     font-family: sans-serif;
@@ -136,11 +147,6 @@ body{
 }
 
 
-
-.btns:hover::before{
-    height: 100%;
-    width: 0;
-}
 
 
 .first-article p{
@@ -274,6 +280,8 @@ main ul li {
 
 @media only screen and (max-width: 400px) {
     
+ 
+    
     .main{
         margin-left: 0px;
         margin-right: 5px
@@ -305,6 +313,9 @@ main ul li {
 
 @media only screen and (max-width: 800px) {
     
+    .h_img{
+        display: none;
+    }
     
     .txt_2{
     display: block;
@@ -317,4 +328,11 @@ main ul li {
         width: 100%;
     }
     
+    .firsto{
+        margin-top: 70px;
+    }
+    
+    .btn{
+        width: 350px;
+    }
 }
