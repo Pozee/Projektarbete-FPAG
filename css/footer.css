@@ -30,7 +30,7 @@ footer ul li {
   text-transform: uppercase;
   cursor: pointer;
 }
-footer li:hover {
+footer li:hover, footer li a:hover {
   color: rgb(185, 185, 185);
 }
 footer div img {
@@ -40,4 +40,8 @@ footer div img {
 footer {
   flex-wrap: wrap;
   min-height: 5em;
+}
+footer li a {
+  color: white;
+  text-decoration: none;
 }

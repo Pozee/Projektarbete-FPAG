@@ -4,10 +4,7 @@
   box-sizing: border-box;
 }
 html {
-  background: url(../bilder/aromatic-beans-blur-773958.jpg) no-repeat center
-    center fixed;
-  background-size: cover;
-  height: 100%;
+  background-color: #1c1e1f;
 }
 
 #title{
@@ -17,6 +14,33 @@ html {
 body{
     height: 100%;
 }
+
+.oo{
+    font-size: 40px;
+}
+
+.h_img{
+    font-family: 'Permanent Marker', cursive;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: url(../bilder/kof.jpg) no-repeat fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    margin-top: 70px;
+    color: white;
+    font-size: 2.5em;
+}
+
+.txt_0{
+    grid-row: 2;
+    padding-top: 50px;
+    text-align: center;
+    
+}
+
+
 
 .main-text {
   color: white;
@@ -28,27 +52,119 @@ body{
 
 .firsto{
     background-color: #0008; 
-     
+    border-bottom: 1px solid red;
     padding: 15px; 
-    margin-bottom: 20px; 
+    margin-bottom: 60px; 
     width: 100%
 }
+
+.paro{
+    font-family: 'ZCOOL QingKe HuangYou', cursive; 
+    position: relative;
+    width: 400px;
+    color: white;
+    font-size: 1em;
+    animation: lefto 6s 1 ease-out;
+}
+
+
+.cont_a{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #0008; 
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.contacto{
+    grid-column: 1;
+    margin: 0;
+    padding: 10px;
+}
+
+.cont_flex{
+    display: inline-flex;
+    flex-flow: row wrap;
+    color: white;
+    font-size: 1.2em;
+    
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+.cont_flex div{
+    padding: 30px;
+    margin-top: 55px;
+}
+
+.cont_flex > div:hover{
+    font-size: 1.3em;
+    border: 1px solid red;
+    border-radius: 20px
+}
+
+#map {
+    position: relative;
+    width: 94%;
+    height: 300px;
+    grid-column: 2;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    animation: cir 4s 1 linear;
+}
+
+
+.sub_body{
+    width: 70%;
+}
+
+
 
 .first-article{
     width: 100%
 }
 
+
+
 .firsto:hover{
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: red;
     
 }
 
+
+.cont_icon{
+    display: block; 
+    padding-bottom:30px; 
+    padding-right:15px;
+}
+
+.sendHead{
+    width: 100%; 
+    background-color: #0008; 
+    margin-top: 80px; 
+    margin-bottom: -50px;
+}
+
+
+.sendo{
+    color: lightblue; 
+    font-size: 2.5em; 
+    padding: 70px; 
+    font-weight: bold; 
+    margin:0 auto;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
 .btn:hover {
-    transform: translateY(-5px);
+    transform: translateY(-1px);
     cursor: pointer;
 }
 
+#a_btn{
+    display: block;
+    
+}
 
 ._msg{
     width: 100%; 
@@ -58,9 +174,6 @@ body{
     margin-top: 50px;
 }
 
-.sub_body{
-    width: 60%;
-}
 
 
 ._msg h3{
@@ -84,17 +197,26 @@ body{
 
 
 .btn{
-    font-size: 2em;
+    font-size: 1.5em;
     margin-left: 10px;
-    margin-right: 50px;
+    margin-right: 20px;
     margin-bottom: 50px;
-    margin-top: 20px;
-    padding: 15px;
-    width: 5em;
-    background-color: #0bb;
-    border: 3px solid black;
-    border-radius: 5px;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 1000px;
+    background-color: #4B2821;
+    border: 1px solid darkred;
+    border-radius: 1px;
+    width: 25em;
+    font-family: 'Righteous', cursive;
+    
+    color: white;
+
 }
+
+
+
 
 
 .first-article p{
@@ -128,6 +250,7 @@ main ul {
   font-size: 1.2em;
   margin: 0 auto;
 }
+
 main ul li {
   list-style-image: none;
   padding-top: 5px;
@@ -184,6 +307,80 @@ main ul li {
   color: lightblue;
   text-decoration: underline;
 }
+
+.sendHead:hover oo{
+    transform-origin: top;
+    animation: swing 1.5s ease-in-out;
+}
+
+
+/* KeyFrames --------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------- */
+
+@keyframes cir {
+    0%{
+        border-radius: 90%;
+    }
+    
+    100%{
+        border-radius: 5px;
+    }
+}
+
+@keyframes lefto {
+    0%{
+        right: 0%;
+        left: 100%;
+        color: yellow;
+    }
+
+    
+    100%{
+        right: 100%;
+        left:0%;
+    }
+}
+
+
+@keyframes swing {
+      0%{
+        transform: rotateX(-60deg)
+    }
+
+      20%{
+        transform: rotateX(60deg)
+    }
+
+      40%{
+        transform: rotateX(-30deg)
+    }
+
+      60%{
+        transform: rotateX(30deg)
+    }
+
+      0%{
+        transform: rotateX(-40deg)
+    }
+    
+    100%{
+        transform: rotateX(60deg)
+    }
+
+    
+}
+
+
+
+
+/* Mobile ---   Puntos    ---------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------- */
+
+
 @media (max-width: 580px) {
   .main-text {
     font-size: 1.5em;
@@ -203,6 +400,8 @@ main ul li {
   }
   
 } 
+
+
 #index-footer { /*Använd ej, är bara till för index */
   position: relative;
 }
@@ -210,8 +409,14 @@ main ul li {
 
 
 
+/* Mobile --------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 400px) {
+    
+ 
     
     .main{
         margin-left: 0px;
@@ -236,8 +441,17 @@ main ul li {
     }
 }
 
+
+/* Tab --------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------- */
+
 @media only screen and (max-width: 800px) {
     
+    .h_img{
+        display: none;
+    }
     
     .txt_2{
     display: block;
@@ -250,4 +464,43 @@ main ul li {
         width: 100%;
     }
     
+    .firsto{
+        margin-top: 70px;
+    }
+    
+    .btn{
+        width: 345px;
+    }
+    
+    .cont_a{
+        grid-template-rows: 75% 25%;
+        width: 100%;
+        padding-left: 20px;
+    }
+    
+    .contacto{
+        grid-row: 1;}
+    
+    #map {
+        display: block;
+        width: 110%;
+        height: 300px;
+        grid-column: 1;
+        grid-row: 2;
+        
+    
+    }
+    .cont_flex div{
+    padding: 10px;
+    margin-top: 20px;
+}
+    
+    .sendo{
+        font-size: 2em;
+    }
+    
+    .oo{
+         font-size: 2em;
+    }
+
 }

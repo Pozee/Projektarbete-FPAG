@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <meta charset="UTF-8" />
-    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-      href="https://fonts.googleapis.com/css?family=Lato|Oswald:500&display=swap"
+      href="https://fonts.googleapis.com/css?family=Supermercado+One|Lato|ZCOOL+QingKe+HuangYou|Permanent+Marker|Oswald:500|Righteous&display=swap"
       rel="stylesheet"
       type="text/css"
     />
@@ -25,48 +25,66 @@
       <div class="meny">
         <a href="index.html">Home</a>
         <a href="shop.html">Shop</a>
-        <a href="#">About us</a>
+        <a href="about.html">About us</a>
         <a href="kontakt.html">Contact</a>
       </div>
     </div>
   </nav>
   </header>
+    
       
+     <div class="h_img">
+        <div class="txt_0">The world's most exotic coffee
+        deeply rooted in the mountains of Yemen</div>
+      </div>
       
-    <main>
-      <div>
-        <br>
-        <br>
-      
-          <div class="firsto">
+    <div class="firsto">
             <article class="first-article"> 
                 <h1 class="main-text" style="margin-bottom: 25px">
                     Contact our support team and find all the information.     
                 </h1>
-                <p>Opening hours: 24 hours a day, every day of the year.</p>
             </article>
+        <div class="paro">
+            <p>Opening hours: 24 hours a day, every day of the year.
+            </p>
+        </div>
+            
           </div>
-
-          
-      <div class="sub_body" style="background-color: #0008; display: table; padding: 15px">  
-          <ul style="display: table-cell">
-            <li><img src="bilder/ikon_mail.png" style="float:left; padding-bottom:0px; padding-right:15px">E - post: <span id="mails">info@kaffeboden.se</span></li><br>
-            <li><img src="bilder/ikon_telefon.png" style="float:left; padding-bottom:0px; padding-right:15px">Telefon: 076 XXX XX XX</li><br>
-            <li><img src="bilder/ikon_adress.png" style="float:left; padding-bottom:0px; padding-right:15px">
+      
+      
+      
+      <div class="cont_a">
+        <div class="contacto">
+            <div class="cont_flex">
+                <div><img src="bilder/ikon_mail.png" class="cont_icon" alt="Mail">E - post: <span id="mails">info@kaffeboden.se</span></div>
+                <div><img src="bilder/ikon_telefon.png" class="cont_icon" alt="Mail">Telefon: 076 XXX XX XX</div>
+                <div><img src="bilder/ikon_adress.png" class="cont_icon" alt="Mail">
                 Fakturadress: Kaffeboden AB, Kaffevägen 2, 113 46 Göteborg<br>
-                Besökadress: Kaffeboden AB, Kaffe Torg 10, 744 51 Göteborg</li>
-          </ul>
+                Besökadress: Kaffeboden AB, Kaffe Torg 10, 744 51 Göteborg</div>
+            </div>
+        </div>
+          
+        <div id="map">
+
+
+        </div>
       </div>
+      
 
-          <div style="width: 100%; background-color: #0008; margin-top: 50px; margin-bottom: -50px;">
-              <h1 style="color: lightblue; font-size: 2.5em; padding: 70px; font-weight: bold; margin:0 auto;display: inline-block">Send us instant message </h1>
-
+          
+      
+    <main>
+      <div>    
+          <div class="sendHead">
+              <a href="#_msg" style="text-decoration: none">
+                <h1 class="sendo">Send us instant message</h1>
+              </a>
           </div>
           
           
-          <form class="_msg" name="myForm"> 
+          <form class="_msg" id="_msg" name="myForm"> 
             <fieldset>
-                <legend class="main-text"><h1>Personla information</h1></legend>
+                <legend class="main-text oo">Personla information </legend>
                 <h2 class="main-text" style="padding-left: 10px; padding-bottom: 40px">Fill in the fields below with your personal information. Then click 'Send' or contact us by mail.</h2>
 
                 <h3>First Name:</h3>
@@ -80,12 +98,13 @@
                 <input class="mata" type="text" maxlength="25"><br>
 
                 <h3>Your Message:</h3>
-                <textarea class="txt_1" rows="10" cols="80" scrolling="auto"></textarea><br>
+                <textarea class="txt_1" rows="10" cols="72"></textarea><br>
 
-                <textarea class="txt_2" rows="10" cols="40" scrolling="auto"></textarea><br>
+                <textarea class="txt_2" rows="10" cols="40"></textarea><br>
 
 
-                <input class="btn" type="reset" value="Send">   <br>
+                <input class="btn" type="reset" value="Send">
+               
             </fieldset>
 
 
@@ -150,11 +169,23 @@
         />
       </div>
       <ul>
-        <li>About Us</li>
-        <li>Contact</li>
-        <li>Vision</li>
-      </ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="kontakt.html">Contact</a></li>
+        <li><a href="vision.html">Vision</a></li>
+    </ul>
     </footer>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+        function initMap () {
+            var location = {lat: 57.699070, lng: 11.958530};
+            var map = new google.maps.Map(document.getElementById("map"), {zoom: 4, center: location});
+            
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }  
+    </script>
+      
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLCKrNLR7mLiXaLeHXE0FKr6iEquGg5GA&callback=initMap"></script>
   </body>
 </html>
