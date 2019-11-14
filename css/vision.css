@@ -94,12 +94,12 @@ h2, p {
     text-transform: uppercase;
 }
 
-.hero__since {
+/* .hero__since {
     font-size: 3rem;
     font-family: 'Homemade Apple', cursive;
     position: relative;
     left: 30rem;
-}
+} */
 
 /* Image animations */
 .slide-in-left {
