@@ -171,7 +171,7 @@ h2, p {
 @media screen and (max-width: 860px) {
     .visionboard__container {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr, 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .visionboard--wide-span {
