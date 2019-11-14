@@ -168,6 +168,12 @@ h2, p {
 
 /* Media Queries */
 
+@media screen and (max-width: 1220px) {
+    .hero__since {
+      left: 18rem;
+    }
+}
+
 @media screen and (max-width: 860px) {
     .visionboard__container {
         grid-template-columns: 1fr;
@@ -176,5 +182,9 @@ h2, p {
 
     .visionboard--wide-span {
         grid-column: unset;
+    }
+
+    .hero__since {
+      left: 0rem;
     }
 }
