@@ -208,7 +208,7 @@ body{
     background-color: #4B2821;
     border: 1px solid darkred;
     border-radius: 1px;
-    width: 25em;
+
     font-family: 'Righteous', cursive;
     
     color: white;
@@ -313,6 +313,11 @@ main ul li {
     animation: swing 1.5s ease-in-out;
 }
 
+
+.txt_1,.txt_2, .btn{
+    position: relative;
+    width: 100%
+}
 
 /* KeyFrames --------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------
@@ -469,7 +474,7 @@ main ul li {
     }
     
     .btn{
-        width: 335px;
+        width: 100%;
     }
     
     .cont_a{
