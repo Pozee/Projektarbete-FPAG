@@ -204,7 +204,7 @@ body{
     margin-top: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 1000px;
+
     background-color: #4B2821;
     border: 1px solid darkred;
     border-radius: 1px;
@@ -469,7 +469,7 @@ main ul li {
     }
     
     .btn{
-        width: 345px;
+        width: 335px;
     }
     
     .cont_a{
