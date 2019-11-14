@@ -56,6 +56,15 @@ body{
     width: 100%
 }
 
+.paro{
+    font-family: 'ZCOOL QingKe HuangYou', cursive; 
+    position: relative;
+    width: 400px;
+    color: white;
+    font-size: 1em;
+    animation: lefto 6s 1 ease-out;
+}
+
 
 .cont_a{
     width: 90%;
@@ -92,13 +101,14 @@ body{
 }
 
 #map {
-
-    width: 400px;
+    position: relative;
+    width: 94%;
     height: 300px;
     grid-column: 2;
     padding: 10px;
     border-radius: 5px;
     margin: 10px;
+    animation: cir 4s 1 linear;
 }
 
 
@@ -115,7 +125,7 @@ body{
 
 
 .firsto:hover{
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: red;
     
 }
@@ -190,13 +200,12 @@ body{
     margin-right: 50px;
     margin-bottom: 50px;
     margin-top: 15px;
-    padding: 7px 100px;
-    padding-right: 100px;
-    width: 5em;
+    
+    width: 2em;
     background-color: #4B2821;
     border: 1px solid darkred;
     border-radius: 1px;
-    width: 660px;
+    width: 25em;
     font-family: 'Righteous', cursive;
     
     color: white;
@@ -324,6 +333,39 @@ main ul li {
 }
 
 
+
+
+/* KeyFrames --------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------- */
+
+@keyframes cir {
+    0%{
+        border-radius: 90%;
+    }
+    
+    100%{
+        border-radius: 5px;
+    }
+}
+
+@keyframes lefto {
+    0%{
+        right: 0%;
+        left: 100%;
+        color: yellow;
+    }
+
+    
+    100%{
+        right: 100%;
+        left:0%;
+    }
+}
+
+
+
 /* Mobile ---   Puntos    ---------------------------------------------------------------
 -----------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------
@@ -430,10 +472,11 @@ main ul li {
     
     #map {
         display: block;
-        width: 350px;
+        width: 110%;
         height: 300px;
         grid-column: 1;
         grid-row: 2;
+        
     
     }
     .cont_flex div{
